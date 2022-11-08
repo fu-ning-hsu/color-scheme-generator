@@ -1,0 +1,43 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <form class="container color-pick">
+            <input id="color-picker" class="color-picker" type="color">
+            <select id="mode">
+                <option id="monochrome" value="monochrome" >單色調</option>
+                <option id="monochrome-dark" value="monochrome-dark" >單色-深</option>
+                <option id="monochrome-light" value="monochrome-light">單色-淺</option>
+                <option id="analogic" value="analogic" >相似色</option>
+                <option id="complement" value="complement" >補色</option>
+                <option id="analogic-complement" value="analogic-complement">相似色補色</option>
+                <option id="triad" value="triad" >三分色</option>
+                <option id="quad" value="quad" >矩形色</option>
+            </select>
+            <button id="btn">製作調色盤</button>
+        </form>
+        <div class="container-color">
+            <div id="color-scheme" class="color-scheme container">
+                <span id="span-1" class="span-1"></span>
+                <span id="span-2" class="span-2"></span>
+                <span id="span-3" class="span-3"></span>
+                <span id="span-4" class="span-4"></span>
+                <span id="span-5" class="span-5"></span>
+            </div>
+            <div id="hex-container" class="container color-hex">
+                <p>#CCD5AE</p>
+                <p>#E9EDC9</p>
+                <p>#FEFAE0</p>
+                <p>#FAEDCD</p>
+                <p>#D4A37</p>
+            </div>
+        </div>
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>
